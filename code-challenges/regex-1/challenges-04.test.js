@@ -63,7 +63,7 @@ Do not use the vertical bar (pipe) in your pattern.
 const matchMonth = (input) => {
   const regex = /^(oct)(ober)?$/;
   const inputStr = input.toString();
-  const firstRegex = (/^\w/) || '';
+  const firstRegex = /^\w/;
   if(firstRegex.test(input)){
     const firstChar = inputStr.match(firstRegex);
     const firstCharL = (firstChar[0].toLowerCase());

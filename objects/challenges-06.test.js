@@ -151,9 +151,25 @@ All of these objects should be added to an array named "sizes". Return the "size
 For example: [{ house: 'Stark', members: 7 }, { house: 'Arryn', members: 3 }, ... ].
 ------------------------------------------------------------------------------------------------ */
 
+
+const houseCharacters = obj => {
+  let houseChars = [];
+  houseChars.push(obj.name);
+  if(obj.spouse){
+    houseChars.push(obj.spouse);
+  }
+  obj.children.forEach(child => {
+    houseChars.push(child);
+  });
+  return houseChars.length;
+};
+
 const houseSize = (arr) => {
   const sizes = [];
-  // Solution code here...
+  arr.forEach(char => {
+    sizes.push({ house: `${char.house}`, members: houseCharacters(char)});
+  });
+  console.log(sizes);
   return sizes;
 };
 

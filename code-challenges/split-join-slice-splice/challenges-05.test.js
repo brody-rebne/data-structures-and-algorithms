@@ -84,8 +84,9 @@ const listFoods = (recipe) => {
   let ingr = recipe.ingredients;
   let ingrLength = recipe.ingredients.length;
   for(let i=0;i<ingrLength;i++) {
-    console.log('https://media0.giphy.com/media/I3fghpZw3o2bu/source.gif');
+    let x = 0;
   }
+  console.log('https://media0.giphy.com/media/I3fghpZw3o2bu/source.gif');
   return result;
 };
 
@@ -184,7 +185,10 @@ Write a function named totalSumCSV that, given a string of comma-separated value
 
 const totalSumCSV = (str) => {
   let total = 0;
-  // Solution code here...
+  let splitStr = str.split(',');
+  splitStr.forEach(num => {
+    total+=parseInt(num);
+  });
   return total;
 };
 
@@ -198,7 +202,9 @@ For example, removeVowels('gregor') returns 'grgr'.
 ------------------------------------------------------------------------------------------------ */
 
 const removeVowels = (str) => {
-  // Solution code here...
+  const vowels = ['a','e','i','o','u'];
+  let splitStr = str.split('');
+  return splitStr.filter(letter => !vowels.includes(letter)).join('');
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -212,7 +218,29 @@ Similarly, extractVowels('The quick brown fox') returns ['Th qck brwn fx', 'eioo
 ------------------------------------------------------------------------------------------------ */
 
 const extractVowels = (str) => {
-  // Solution code here...
+  const vowels = ['a','e','i','o','u'];
+  let arr1 = [];
+  let arr2 = [];
+  let splitStr = str.split('');
+  splitStr.forEach(letter => {
+    if(vowels.includes(letter)) {
+      arr2.push(letter);
+    } else {
+      arr1.push(letter);
+    }
+  });
+  arr2.sort((a,b) => {
+    let aL = a.toLowerCase();
+    let bL = b.toLowerCase();
+    if(aL>bL) {
+      return 1;
+    } else if (aL<bL) {
+      return -1;
+    } else {
+      return 0;
+    }
+  });
+  return [arr1.join(''), arr2.join('')];
 };
 
 /* ------------------------------------------------------------------------------------------------

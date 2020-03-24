@@ -62,17 +62,45 @@ O(n)
 
 1.0: Initial version
 
-# Singly Linked List
+## Singly Linked List
 
-## Challenge
+### Challenge
 Create a singly linked list class, with methods to add an item, search the list's nodes for a value, and create a string of all the nodes' values.
 
-## Approach & Efficiency
+### Approach & Efficiency
 Our instructor, Amanda Iverson, provided some starter code to be implemented. We worked together as a class to fine tune the functionality, and individually recreated and documented it.
 
-## API
+### API
 `LinkList.Insert(int value)` - inserts a node with provided value at the beginning of the linked list
 
 `LinkList.Includes(int value)` - searches the linked list for a node with a value matching the provided value
 
 `LinkList.ToString()` - returns a string of the values of every node in a linked list (overrides default `ToString()`)
+
+## Linked List Part 2 - Insert Before
+
+### Problem Domain
+
+Write a method which adds a new node with a given value before the first node in a list with a (different) given value
+
+### Expected Inputs
+
+Input: 
+- List: Head -> 10 -> 20 -> 30 -> null
+- Val to add: 15
+- Val to search: 20
+
+Output:
+- List: Head -> 10 -> 15 -> 20 -> 30 -> null
+
+### Big O
+
+Time: O(n)
+
+### Whiteboard Visual
+
+![Linked List 2 Whiteboard](https://i.imgur.com/mPC72I0.png)
+
+### Changelog
+
+1.0: Initial version

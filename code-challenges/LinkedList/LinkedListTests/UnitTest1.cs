@@ -85,6 +85,83 @@ namespace XUnitTestProject1
             Assert.Equal(20, ll.Head.Value);
         }
 
+        //test that a node can be inserted at the end of a list
+        [Fact]
+        public void CanInsertNewNodeAtEndOfList()
+        {
+            LinkList ll = new LinkList();
+            ll.Insert(20);
+            ll.Insert(20);
+            ll.Append(10);
+            string testString = ll.ToString();
+            Assert.Equal("20 -> 20 -> 10 -> NULL", testString);
+        }
+
+        //test that multiple nodes can be inserted at the end of a list
+        [Fact]
+        public void CanInsertMultipleNewNodesAtEndOfList()
+        {
+            LinkList ll = new LinkList();
+            ll.Insert(20);
+            ll.Insert(20);
+            ll.Append(30);
+            ll.Append(40);
+            string testString = ll.ToString();
+            Assert.Equal("20 -> 20 -> 30 -> 40 -> NULL", testString);
+        }
+
+        //test that a node can be added before a given node in the middle of a list
+        [Fact]
+        public void CanInsertNewNodeBeforeGivenNodeInMiddleOfList()
+        {
+            LinkList ll = new LinkList();
+            ll.Insert(30);
+            ll.Insert(20);
+            ll.Insert(10);
+            ll.InsertBefore(30, 25);
+            string testString = ll.ToString();
+            Assert.Equal("10 -> 20 -> 25 -> 30 -> NULL", testString);
+        }
+
+        //test that a node can be added before the first node in a list
+        [Fact]
+        public void CanInsertNewNodeBeforeGivenNodeAtBeginningOfList()
+        {
+            LinkList ll = new LinkList();
+            ll.Append(10);
+            ll.Append(20);
+            ll.Append(30);
+            ll.InsertBefore(10, 5);
+            string testString = ll.ToString();
+            Assert.Equal("5 -> 10 -> 20 -> 30 -> NULL", testString);
+        }
+
+        //test that a node can be added after a given node in the middle of a list
+        [Fact]
+        public void CanInsertNewNodeAfterGivenNodeInMiddleOfList()
+        {
+            LinkList ll = new LinkList();
+            ll.Append(10);
+            ll.Append(20);
+            ll.Append(30);
+            ll.InsertAfter(10, 15);
+            string testString = ll.ToString();
+            Assert.Equal("10 -> 15 -> 20 -> 30 -> NULL", testString);
+        }
+
+        //test that a node can be added after the last node in a list
+        [Fact]
+        public void CanInsertNewNodeAfterGivenNodeAtEndOfList()
+        {
+            LinkList ll = new LinkList();
+            ll.Append(10);
+            ll.Append(20);
+            ll.Append(30);
+            ll.InsertAfter(30, 35);
+            string testString = ll.ToString();
+            Assert.Equal("10 -> 20 -> 30 -> 35 -> NULL", testString);
+        }
+
         //test that the search method can find a value
         [Fact]
         public void CanFindNodeWithValueInLL()

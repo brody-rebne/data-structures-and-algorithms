@@ -162,6 +162,66 @@ namespace XUnitTestProject1
             Assert.Equal("10 -> 20 -> 30 -> 35 -> NULL", testString);
         }
 
+        //test that value kth from end can be read
+        [Fact]
+        public void CanFindValueKthFromEnd()
+        {
+            LinkList ll = new LinkList();
+            ll.Append(10);
+            ll.Append(20);
+            ll.Append(30);
+            ll.Append(40);
+            int result = ll.KthFromEnd(2);
+            Assert.Equal(20, result);
+        }
+
+        //test that value kth from end can be read when k traverses to the length of the list
+        [Fact]
+        public void CanFindValueKthFromEndLengthOfList()
+        {
+            LinkList ll = new LinkList();
+            ll.Append(10);
+            ll.Append(20);
+            ll.Append(30);
+            ll.Append(40);
+            int result = ll.KthFromEnd(3);
+            Assert.Equal(10, result);
+        }
+
+        //tests that kth value can be found on a list of size 1
+        [Fact]
+        public void CanFindValueKthFromEndInSingleNodeList()
+        {
+            LinkList ll = new LinkList();
+            ll.Append(10);
+            int result = ll.KthFromEnd(0);
+            Assert.Equal(10, result);
+        }
+
+        //test that value when k too large (out of bounds)
+        [Fact]
+        public void ThrowsExceptionWhenKIsOutOfBounds()
+        {
+            LinkList ll = new LinkList();
+            ll.Append(10);
+            ll.Append(20);
+            ll.Append(30);
+            ll.Append(40);
+            //not sure how to test for the exception
+        }
+
+        //test that if k is negative, an exception will be thrown
+        [Fact]
+        public void ThrowsExceptionWhenKIsNegative()
+        {
+            LinkList ll = new LinkList();
+            ll.Append(10);
+            ll.Append(20);
+            ll.Append(30);
+            ll.Append(40);
+            //not sure how to test for the exception
+        }
+
         //test that the search method can find a value
         [Fact]
         public void CanFindNodeWithValueInLL()

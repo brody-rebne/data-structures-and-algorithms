@@ -32,6 +32,10 @@ O(n)
 
 ## 03 - Binary Search
 
+### Code
+
+https://github.com/brody-rebne/data-structures-and-algorithms/tree/master/code-challenges/LinkedList
+
 ### Problem Domain
 
 Write a function which takes in a sorted array and a value to search. Return the index of the array value found to match the search value. If no matching value is found, return -1. Do not use any built-in helper methods.

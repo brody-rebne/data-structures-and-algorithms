@@ -145,6 +145,46 @@ namespace LinkedList.Classes
         }
 
         /// <summary>
+        /// Finds the value of the node a certain distance from the end of the list
+        /// </summary>
+        /// <param name="k">The distance of the node from the end of the list</param>
+        /// <returns></returns>
+        public int KthFromEnd(int k)
+        {
+            //counter for list length
+            int listLength = 0;
+
+            //traversal loop to find length
+            Current = Head;
+            while(Current != null)
+            {
+                listLength++;
+                Current = Current.Next;
+            }
+
+            //find distance from left
+            int distFromBeginning = listLength - k - 1;
+
+            //if the "index" is within the bounds of the list, find its value
+            //if k sends you to the first value in the list, the for loop will not run and Current will remain as Head
+            if(distFromBeginning >= 0)
+            {
+                Current = Head;
+                for(int i = 0; i < distFromBeginning; i++)
+                {
+                    Current = Current.Next;
+                }
+            }
+            else
+            {
+                throw(Exception e);
+            }
+
+            //return value of current node
+            return Current.Value;
+        }
+
+        /// <summary>
         /// Concatenates the values from each node in the list into a string
         /// </summary>
         /// <returns>A string of all the values from the list</returns>

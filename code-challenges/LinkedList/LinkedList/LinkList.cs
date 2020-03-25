@@ -167,7 +167,7 @@ namespace LinkedList.Classes
 
             //if the "index" is within the bounds of the list, find its value
             //if k sends you to the first value in the list, the for loop will not run and Current will remain as Head
-            if(distFromBeginning >= 0)
+            if(distFromBeginning >= 0 && distFromBeginning < listLength)
             {
                 Current = Head;
                 for(int i = 0; i < distFromBeginning; i++)
@@ -177,7 +177,7 @@ namespace LinkedList.Classes
             }
             else
             {
-                throw(Exception e);
+                throw new Exception($"Number out of bounds!");
             }
 
             //return value of current node

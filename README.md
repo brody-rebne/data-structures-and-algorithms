@@ -83,7 +83,7 @@ Our instructor, Amanda Iverson, provided some starter code to be implemented. We
 
 Write a method which adds a new node with a given value before the first node in a list with a (different) given value
 
-### Expected Inputs
+### Expected Inputs and Outputs
 
 Input: 
 - List: Head -> 10 -> 20 -> 30 -> null
@@ -100,6 +100,34 @@ Time: O(n)
 ### Whiteboard Visual
 
 ![Linked List 2 Whiteboard](https://i.imgur.com/mPC72I0.png)
+
+### Changelog
+
+1.0: Initial version
+
+## Linked List Part 3 - Find Node from End
+
+### Problem Domain
+
+Write a method for the LinkedList class which takes a number as a parameter. It should return the value of the node which is [number] from the end of the list.
+
+### Expected Input/Output
+
+Input: 2 - called on linked list "1 -> 2 -> 3 -> 4 -> 5 -> 6 -> null"
+
+Output: 4
+
+Input: 20 - called on linked list "1 -> 2 -> 3 -> 4 -> 5 -> 6 -> null"
+
+Output: Exception
+
+### Big O
+
+Time: O(n)
+
+### Whiteboard Visual
+
+![Linked List 3 Whiteboard](https://i.imgur.com/DclX4jJ.jpg)
 
 ### Changelog
 

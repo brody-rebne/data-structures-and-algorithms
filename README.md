@@ -136,3 +136,44 @@ Time: O(n)
 ### Changelog
 
 1.0: Initial version
+
+## Linked List Merge
+
+### Problem Domain
+
+Write a method which takes two linked lists as arguments. Zip the two linked lists together into one, alternating nodes between input lists. Return the zipped list.
+
+### Expected Input/Output
+
+Input:
+- LinkedList1: "1 -> 2 -> 3 -> NULL"
+- LinkedList2: "4 -> 5 -> 6 -> NULL"
+
+Output:
+- ReturnList: "1 -> 4 -> 2 -> 5 -> 3 -> 6 -> NULL"
+
+Input: 20:
+- LinkedList1: "1 -> 2 -> 3 -> NULL"
+- LinkedList2: "4 -> NULL"
+
+Output:
+- ReturnList: "1 -> 4 -> 2 -> 3 -> NULL"
+
+Input: 20:
+- LinkedList1: "1 -> 2 -> 3 -> NULL"
+- LinkedList2: "NULL"
+
+Output:
+- ReturnList: "1 -> 2 -> 3 -> NULL"
+
+### Big O
+
+Time: O(n)
+
+### Whiteboard Visual
+
+![Linked List Merge Whiteboard](https://i.imgur.com/fK5IIUY.jpg)
+
+### Changelog
+
+1.0: Initial version

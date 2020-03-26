@@ -4,7 +4,7 @@ namespace LLMerge.Classes
 {
     public class Program
     {
-        static void Main(string[] args)
+        static -void Main(string[] args)
         {
             LinkedList ll1 = new LinkedList();
             LinkedList ll2 = new LinkedList();

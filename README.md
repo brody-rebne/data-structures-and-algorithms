@@ -139,6 +139,10 @@ Time: O(n)
 
 ## Linked List Merge
 
+### Code
+
+https://github.com/brody-rebne/data-structures-and-algorithms/tree/master/code-challenges/LLMerge/LLMerge
+
 ### Problem Domain
 
 Write a method which takes two linked lists as arguments. Zip the two linked lists together into one, alternating nodes between input lists. Return the zipped list.

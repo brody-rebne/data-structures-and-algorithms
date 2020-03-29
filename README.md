@@ -62,11 +62,11 @@ O(n)
 
 ![Whiteboard Visual](https://i.imgur.com/bJsWW5t.jpg)
 
-## 04 - Change Log
+### Change Log
 
 1.0: Initial version
 
-## Singly Linked List
+## 04 - Singly Linked List
 
 ### Challenge
 Create a singly linked list class, with methods to add an item, search the list's nodes for a value, and create a string of all the nodes' values.
@@ -177,6 +177,42 @@ Time: O(n)
 ### Whiteboard Visual
 
 ![Linked List Merge Whiteboard](https://i.imgur.com/fK5IIUY.jpg)
+
+### Changelog
+
+1.0: Initial version
+
+## Stack and Queue
+
+### Code
+
+https://github.com/brody-rebne/data-structures-and-algorithms/tree/master/code-challenges/StacksAndQueues/StacksAndQueues
+
+### Problem Domain
+
+Write a method for a queue to enqueue a new item at the end the queue. This method should take O(1) time.
+
+### Expected Input/Output
+
+Input:
+- Queue: `Front -> 1 -> 2 -> Rear`, `3`
+
+Output:
+- Queue: `Front -> 1 -> 2 -> 3 -> Rear`
+
+Input:
+- Queue: `Front -> Rear`, `1`
+
+Output:
+- Queue: `Front -> 1 -> Rear`
+
+### Big O
+
+Time: O(1)
+
+### Whiteboard Visual
+
+![Queue Enqueue Whiteboard](https://i.imgur.com/o9K7oEu.jpg)
 
 ### Changelog
 

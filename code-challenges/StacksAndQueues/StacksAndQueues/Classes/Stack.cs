@@ -30,7 +30,16 @@ namespace StacksAndQueues
         /// </summary>
         public void Pop()
         {
-
+            try
+            {
+                Node oldTop = Top;
+                Top = oldTop.Next;
+                oldTop.Next = null;
+            }
+            catch(NullReferenceException e)
+            {
+                Console.WriteLine($"Null Reference Exception: {e}");
+            }
         }
 
         /// <summary>

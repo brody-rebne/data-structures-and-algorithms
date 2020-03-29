@@ -48,7 +48,15 @@ namespace StacksAndQueues
         /// <returns>The value of the node at the top of the stack</returns>
         public int Peek()
         {
-            return 0;
+            try
+            {
+                return Top.Value;
+            }
+            catch (NullReferenceException e)
+            {
+                Console.WriteLine($"Null Reference Exception: {e}");
+                throw;
+            }
         }
 
         /// <summary>

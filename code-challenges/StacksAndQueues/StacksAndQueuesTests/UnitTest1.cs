@@ -67,5 +67,17 @@ namespace StacksAndQueuesTests
 
             Assert.Equal("Top -> null", stackString);
         }
+
+        //test that the top node's value can be peeked
+        [Fact]
+        public void CanPeekStack()
+        {
+            Stack stack = new Stack();
+            stack.Push(33);
+            stack.Push(37);
+            int peekedVal = stack.Peek();
+
+            Assert.Equal(37, peekedVal);
+        }
     }
 }

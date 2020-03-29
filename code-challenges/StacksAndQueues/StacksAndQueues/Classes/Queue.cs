@@ -58,7 +58,15 @@ namespace StacksAndQueues
         /// <returns>The value of the node at the front of the queue</returns>
         public int Peek()
         {
-            return 0;
+            try
+            {
+                return Front.Value;
+            }
+            catch(NullReferenceException e)
+            {
+                Console.WriteLine($"Null Reference Exception: {e}");
+                throw;
+            }
         }
 
         /// <summary>

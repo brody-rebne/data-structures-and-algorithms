@@ -82,7 +82,7 @@ namespace StacksAndQueuesTests
 
         //test that peek throws an exception on empty stack
 /*      [Fact]
-        public void PeekEmptyThrowsException()
+        public void PeekEmptyStackThrowsException()
         {
             Stack stack = new Stack();
 
@@ -152,5 +152,28 @@ namespace StacksAndQueuesTests
 
             Assert.Equal("Front -> Rear", testString);
         }
+
+        //test that queue can be peeked
+        [Fact]
+        public void CanPeekQueue()
+        {
+            Queue queue = new Queue();
+            queue.Enqueue(7);
+            queue.Enqueue(8);
+            int peekedVal = queue.Peek();
+
+            Assert.Equal(7, peekedVal);
+        }
+
+        //test that peek throws an exception on empty queue
+        /*      [Fact]
+                public void PeekEmptyQueueThrowsException()
+                {
+                    Queue queue = new Queue();
+
+                    Assert.Throws<NullReferenceException>(queue.Peek());
+                }*/
+        //i do not know how to test for exceptions
+        //nor can i figure it out from any google search i can think of
     }
 }

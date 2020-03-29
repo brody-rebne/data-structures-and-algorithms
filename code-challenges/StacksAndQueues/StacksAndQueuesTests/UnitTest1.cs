@@ -7,7 +7,7 @@ namespace StacksAndQueuesTests
     public class UnitTest1
     {
         //test that an empty stack can be instantiated
-        //relies on ToString method
+        //relies on Stack.ToString method
         [Fact]
         public void CanInstantiateStack()
         {
@@ -17,7 +17,7 @@ namespace StacksAndQueuesTests
             Assert.Equal("Top -> null", stackString);
         }
 
-        //test that a value can be pushed onto the stack
+        //test that a value can be pushed onto a stack
         [Fact]
         public void CanPushToStack()
         {
@@ -28,7 +28,7 @@ namespace StacksAndQueuesTests
             Assert.Equal("Top -> 12 -> null", stackString);
         }
 
-        //test that multiple values can be pushed onto the stack
+        //test that multiple values can be pushed onto a stack
         [Fact]
         public void CanPushMultipleToStack()
         {
@@ -41,7 +41,7 @@ namespace StacksAndQueuesTests
             Assert.Equal("Top -> 9 -> 8 -> 7 -> null", stackString);
         }
 
-        //test that a value can be popped off of the stack
+        //test that a value can be popped off of a stack
         [Fact]
         public void CanPopOffStack()
         {
@@ -54,7 +54,7 @@ namespace StacksAndQueuesTests
             Assert.Equal("Top -> 12 -> null", stackString);
         }
 
-        //test that multiple values can be popped off of the stack
+        //test that multiple values can be popped off of a stack
         [Fact]
         public void CanPopMultipleOffStack()
         {
@@ -68,7 +68,7 @@ namespace StacksAndQueuesTests
             Assert.Equal("Top -> null", stackString);
         }
 
-        //test that the top node's value can be peeked
+        //test that a stack top node's value can be peeked
         [Fact]
         public void CanPeekStack()
         {
@@ -78,6 +78,28 @@ namespace StacksAndQueuesTests
             int peekedVal = stack.Peek();
 
             Assert.Equal(37, peekedVal);
+        }
+
+        //test that peek throws an exception on empty stack
+/*      [Fact]
+        public void PeekEmptyThrowsException()
+        {
+            Stack stack = new Stack();
+
+            Assert.Throws<NullReferenceException>(stack.Peek());
+        }*/
+        //i do not know how to test for exceptions
+        //nor can i figure it out from any google search i can think of
+
+        //test that an empty queue can be instantiated
+        //relies on Queue.ToString method
+        [Fact]
+        public void CanInstantiateQueue()
+        {
+            Queue newQueue = new Queue();
+            string testString = newQueue.ToString();
+
+            Assert.Equal("Front -> Rear", testString);
         }
     }
 }

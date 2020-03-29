@@ -39,6 +39,7 @@ namespace StacksAndQueues
             catch(NullReferenceException e)
             {
                 Console.WriteLine($"Null Reference Exception: {e}");
+                throw;
             }
         }
 
@@ -69,9 +70,9 @@ namespace StacksAndQueues
         }
 
         /// <summary>
-        /// Concatenates the values from each node in the stack into a string
+        /// Concatenates the values from each node in a stack into a string
         /// </summary>
-        /// <returns>A string of all the values from the stack</returns>
+        /// <returns>A string of all the values from a stack</returns>
         public override string ToString()
         {
             Node current = Top;

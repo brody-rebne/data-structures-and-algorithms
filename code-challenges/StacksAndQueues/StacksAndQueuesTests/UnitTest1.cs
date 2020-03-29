@@ -125,5 +125,32 @@ namespace StacksAndQueuesTests
 
             Assert.Equal("Front -> 7 -> 8 -> 9 -> Rear", testString);
         }
+
+        //test that a node can be dequeued
+        [Fact]
+        public void CanDequeue()
+        {
+            Queue queue = new Queue();
+            queue.Enqueue(7);
+            queue.Enqueue(8);
+            queue.Dequeue();
+            string testString = queue.ToString();
+
+            Assert.Equal("Front -> 8 -> Rear", testString);
+        }
+
+        //test that all nodes in a list can be dequeued
+        [Fact]
+        public void CanDequeueAll()
+        {
+            Queue queue = new Queue();
+            queue.Enqueue(7);
+            queue.Enqueue(8);
+            queue.Dequeue();
+            queue.Dequeue();
+            string testString = queue.ToString();
+
+            Assert.Equal("Front -> Rear", testString);
+        }
     }
 }

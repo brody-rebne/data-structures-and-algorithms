@@ -101,5 +101,29 @@ namespace StacksAndQueuesTests
 
             Assert.Equal("Front -> Rear", testString);
         }
+
+        //test that a node can be enqueued to a stack
+        [Fact]
+        public void CanEnqueue()
+        {
+            Queue queue = new Queue();
+            queue.Enqueue(7);
+            string testString = queue.ToString();
+
+            Assert.Equal("Front -> 7 -> Rear", testString);
+        }
+
+        //test that multiple nodes can be enqueued to a stack
+        [Fact]
+        public void CanEnqueueMultiple()
+        {
+            Queue queue = new Queue();
+            queue.Enqueue(7);
+            queue.Enqueue(8);
+            queue.Enqueue(9);
+            string testString = queue.ToString();
+
+            Assert.Equal("Front -> 7 -> 8 -> 9 -> Rear", testString);
+        }
     }
 }

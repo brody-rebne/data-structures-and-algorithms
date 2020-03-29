@@ -24,12 +24,13 @@ namespace StacksAndQueues
             Node newNode = new Node(val);
             if(Rear != null)
             {
-                Front = newNode;
+                Rear.Next = newNode;
                 Rear = newNode;
             }
             else
             {
-                Rear.Next = newNode;
+                Front = newNode;
+                Rear = newNode;
             }
         }
 
@@ -38,7 +39,17 @@ namespace StacksAndQueues
         /// </summary>
         public void Dequeue()
         {
-
+            try
+            {
+                Node oldFront = Front;
+                Front = oldFront.Next;
+                oldFront.Next = null;
+            }
+            catch (NullReferenceException e)
+            {
+                Console.WriteLine($"Null Reference Exception: {e}");
+                throw;
+            }
         }
 
         /// <summary>

@@ -6,7 +6,12 @@ namespace StacksAndQueues
 {
     public class Stack
     {
-        public Node Top { get; set; }
+        private Node Top { get; set; }
+
+        public Stack()
+        {
+            Top = null;
+        }
 
         /// <summary>
         /// Pushes a node on the top of the stack
@@ -14,7 +19,10 @@ namespace StacksAndQueues
         /// <param name="val">The value of the node to be added</param>
         public void Push(int val)
         {
-
+            Node previousTop = Top;
+            Node newNode = new Node(val);
+            Top = newNode;
+            newNode.Next = previousTop;
         }
 
         /// <summary>
@@ -41,6 +49,26 @@ namespace StacksAndQueues
         public bool IsEmpty()
         {
             return false;
+        }
+
+        /// <summary>
+        /// Concatenates the values from each node in the stack into a string
+        /// </summary>
+        /// <returns>A string of all the values from the stack</returns>
+        public override string ToString()
+        {
+            Node current = Top;
+
+            StringBuilder sb = new StringBuilder();
+
+            sb.Append("Top -> ");
+            while (current != null)
+            {
+                sb.Append($"{current.Value} -> ");
+                current = current.Next;
+            }
+            sb.Append("null");
+            return sb.ToString();
         }
     }
 }

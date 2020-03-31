@@ -217,3 +217,40 @@ Time: O(1)
 ### Changelog
 
 1.0: Initial version
+
+## PseudoQueue
+
+### Code
+
+https://github.com/brody-rebne/data-structures-and-algorithms/tree/master/code-challenges/QueueWithStacks/QueueWithStacks
+
+### Problem Domain
+
+Create a class called PseudoQueue, which replicates the first-in first-out functionality of a Queue, but using 2 standard Stack objects instead. The Stacks have push and pop functionality and may not be altered.
+
+### Expected Input/Output
+
+Input:
+- Enqueue: `Front -> 1 -> 2 -> Rear`, `3`
+
+Output:
+- `Front -> 1 -> 2 -> 3 -> Rear`
+
+Input:
+- Dequeue: `Front -> 1-> 2 ->3 -> Rear`
+
+Output:
+- `Front -> 2 -> 3 -> Rear`
+
+### Big O
+
+Time: O(n)
+Space: O(n)
+
+### Whiteboard Visual
+
+![PseudoQueue Whiteboard](https://i.imgur.com/ZxRDyWx.jpg)
+
+### Changelog
+
+1.0: Initial version

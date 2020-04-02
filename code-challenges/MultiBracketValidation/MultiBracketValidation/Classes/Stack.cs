@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace MultiBracketValidation
+namespace BracketValidation
 {
     public class Stack
     {
@@ -17,7 +17,7 @@ namespace MultiBracketValidation
         /// Pushes a node on the top of the stack
         /// </summary>
         /// <param name="val">The value of the node to be added</param>
-        public void Push(string val)
+        public void Push(char val)
         {
             Node previousTop = Top;
             Node newNode = new Node(val);
@@ -47,7 +47,7 @@ namespace MultiBracketValidation
         /// Returns the value of the node on top of the stack
         /// </summary>
         /// <returns>The value of the node at the top of the stack</returns>
-        public string Peek()
+        public char Peek()
         {
             try
             {
@@ -56,7 +56,7 @@ namespace MultiBracketValidation
             catch (NullReferenceException e)
             {
                 Console.WriteLine($"Null Reference Exception: {e}");
-                throw;
+                return '\0';
             }
         }
 
@@ -66,13 +66,15 @@ namespace MultiBracketValidation
         /// <returns>True if stack is empty</returns>
         public bool IsEmpty()
         {
+            if (Peek() == '\0')
+                return true;
             return false;
         }
 
         /// <summary>
-        /// Concatenates the values from each node in a stack into a string
+        /// Concatenates the values from each node in a stack into a char
         /// </summary>
-        /// <returns>A string of all the values from a stack</returns>
+        /// <returns>A char of all the values from a stack</returns>
         public override string ToString()
         {
             Node current = Top;

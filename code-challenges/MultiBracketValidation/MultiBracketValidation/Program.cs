@@ -6,7 +6,6 @@ namespace BracketValidation
     {
         static void Main(string[] args)
         {
-            MultiBracketValidation("(()");
         }
 
         public static bool MultiBracketValidation(string input)

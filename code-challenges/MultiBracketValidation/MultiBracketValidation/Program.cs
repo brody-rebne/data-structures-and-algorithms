@@ -14,9 +14,6 @@ namespace BracketValidation
             //creating a stack to house current open bracket
             Stack bracketStack = new Stack();
 
-            //split input string to array of individual characters
-            string[] splitInput = input.Split();
-
             foreach (char character in input)
             {
                 //if the character is an opening bracket, push its complement to the stack

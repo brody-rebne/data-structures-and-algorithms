@@ -254,3 +254,40 @@ Space: O(n)
 ### Changelog
 
 1.0: Initial version
+
+## Bracket Validation
+
+### Code
+
+https://github.com/brody-rebne/data-structures-and-algorithms/tree/master/code-challenges/BracketValidation/BracketValidation
+
+### Problem Domain
+
+Create a function which takes a string input, and validates that the string properly balances brackets. Brackets include parens: (), square brackets: [], and curlies: {}, and each should be treated as distinct. The function should return a bool indicating that the bracket syntax is correct (true) or incorrect (false).
+
+### Expected Input/Output
+
+Input:
+`((text){moretext[]})`
+
+Output:
+`true`
+
+Input:
+`((})`
+
+Output:
+`false`
+
+### Big O
+
+Time: O(n)
+Space: O(n)
+
+### Whiteboard Visual
+
+![BracketValidation Whiteboard](https://i.imgur.com/ZxRDyWx.jpg)
+
+### Changelog
+
+1.0: Initial version

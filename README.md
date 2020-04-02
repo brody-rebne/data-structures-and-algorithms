@@ -259,7 +259,7 @@ Space: O(n)
 
 ### Code
 
-https://github.com/brody-rebne/data-structures-and-algorithms/tree/master/code-challenges/BracketValidation/BracketValidation
+https://github.com/brody-rebne/data-structures-and-algorithms/tree/master/code-challenges/MultiBracketValidation/MultiBracketValidation
 
 ### Problem Domain
 
@@ -286,7 +286,7 @@ Space: O(n)
 
 ### Whiteboard Visual
 
-![BracketValidation Whiteboard](https://i.imgur.com/ZxRDyWx.jpg)
+![BracketValidation Whiteboard](https://i.imgur.com/ipP39uE.jpg)
 
 ### Changelog
 

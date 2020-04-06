@@ -34,7 +34,7 @@ Space: O(1)
 
 Whiteboard for BinarySearchTree Add method:
 
-![BracketValidation Whiteboard](https://i.imgur.com/ipP39uE.jpg)
+![BracketValidation Whiteboard](https://i.imgur.com/GF1atm6.jpg)
 
 ### Changelog
 

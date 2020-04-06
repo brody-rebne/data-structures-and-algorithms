@@ -72,5 +72,55 @@ namespace TreesTest
             string testString = string.Join(",", testArray);
             Assert.Equal("", testString);
         }
+
+        //tests whether a new binary search tree can be instantiated
+        [Fact]
+        public void CanInstantiateBST()
+        {
+            BinarySearchTree testTree = new BinarySearchTree();
+            Assert.IsType<BinarySearchTree>(testTree);
+        }
+
+        //tests whether nodes can be added to a binary search tree
+        [Fact]
+        public void CanAddNodesToBST()
+        {
+            BinarySearchTree testTree = new BinarySearchTree();
+            testTree.Insert(5);
+            testTree.Insert(7);
+            testTree.Insert(2);
+            testTree.Insert(3);
+
+            int[] testArray = testTree.PreOrder();
+            string testString = string.Join(",", testArray);
+
+            Assert.Equal("5,2,3,7", testString);
+        }
+
+        //tests whether nodes can be added to a binary search tree
+        [Fact]
+        public void CanFindExistingNode()
+        {
+            BinarySearchTree testTree = new BinarySearchTree();
+            testTree.Insert(5);
+            testTree.Insert(7);
+            testTree.Insert(2);
+            testTree.Insert(3);
+
+            Assert.True(testTree.Contains(3));
+        }
+
+        //tests whether nodes can be added to a binary search tree
+        [Fact]
+        public void CantFindNonexistingNode()
+        {
+            BinarySearchTree testTree = new BinarySearchTree();
+            testTree.Insert(5);
+            testTree.Insert(7);
+            testTree.Insert(2);
+            testTree.Insert(3);
+
+            Assert.False(testTree.Contains(4));
+        }
     }
 }

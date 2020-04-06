@@ -10,10 +10,11 @@ namespace TreesTest
         /// Generates a test tree with 3 levels, and node values 1-7 counted up in reading order
         /// </summary>
         /// <returns>The test tree</returns>
-        public BinaryTree generateTree()
+        public BinaryTree GenerateTree()
         {
             BinaryTree globalTestTree = new BinaryTree();
 
+            //manually defining nodes for a predictable test tree layout
             globalTestTree.Root = new Node(1);
             globalTestTree.Root.Left = new Node(2);
             globalTestTree.Root.Right = new Node(3);
@@ -37,7 +38,7 @@ namespace TreesTest
         [Fact]
         public void CanPreOrderTraverse()
         {
-            BinaryTree testTree = generateTree();
+            BinaryTree testTree = GenerateTree();
             int[] testArray = testTree.PreOrder();
             string testString = string.Join(",", testArray);
             Assert.Equal("1,2,4,5,3,6,7", testString);
@@ -47,7 +48,7 @@ namespace TreesTest
         [Fact]
         public void CanInOrderTraverse()
         {
-            BinaryTree testTree = generateTree();
+            BinaryTree testTree = GenerateTree();
             int[] testArray = testTree.InOrder();
             string testString = string.Join(",", testArray);
             Assert.Equal("4,2,5,1,6,3,7", testString);
@@ -57,7 +58,7 @@ namespace TreesTest
         [Fact]
         public void CanPostOrderTraverse()
         {
-            BinaryTree testTree = generateTree();
+            BinaryTree testTree = GenerateTree();
             int[] testArray = testTree.PostOrder();
             string testString = string.Join(",", testArray);
             Assert.Equal("4,5,2,6,7,3,1", testString);

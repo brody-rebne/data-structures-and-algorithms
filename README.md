@@ -292,8 +292,10 @@ Space: O(n)
 
 1.0: Initial version
 
-## Trees
+## 15. Trees
 
-### Code
+https://github.com/brody-rebne/data-structures-and-algorithms/tree/master/code-challenges/Trees/README.md
 
-https://github.com/brody-rebne/data-structures-and-algorithms/tree/master/code-challenges/Trees/
+## 16. FizzBuzz Tree
+
+https://github.com/brody-rebne/data-structures-and-algorithms/tree/master/code-challenges/FizzBuzzTree/README.md

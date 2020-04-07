@@ -2,7 +2,7 @@
 
 ### Code
 
-https://github.com/brody-rebne/data-structures-and-algorithms/tree/master/code-challenges/MultiBracketValidation/MultiBracketValidation
+https://github.com/brody-rebne/data-structures-and-algorithms/tree/master/code-challenges/Trees/Trees
 
 ### Problem Domain
 
@@ -34,7 +34,7 @@ Space: O(1)
 
 Whiteboard for BinarySearchTree Add method:
 
-![BracketValidation Whiteboard](https://i.imgur.com/GF1atm6.jpg)
+![Binary Search Tree Add Whiteboard](https://i.imgur.com/GF1atm6.jpg)
 
 ### Changelog
 

@@ -74,8 +74,44 @@ Space: O(n)
 
 *Whiteboarding done collaboratively with Sue Tarazi*
 
-### Changelog
+## Max Value
+
+### Problem Domain
+
+Write a breadth first traversal method which takes in a binary tree. Return a list of the tree's node's values in the order in which they were traversed
+
+#### Edge Cases:
+
+Empty tree
+
+Null value in node
+
+### Expected Input/Output
+
+Input:
+```
+    4
+ 3     7
+6 1   2 5
+```
+
+Output:
+
+List: `1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7`
+
+### Big O
+
+Time: O(n)
+Space: O(n)
+
+### Whiteboard Visual
+
+![Max Value Whiteboard](https://i.imgur.com/AJU0kSl.jpg)
+
+## Changelog
 
 1.0: Initial version
 
-2.0 Adding breadth-first traversal
+2.0 Adding breadth-first traversal algorithm
+
+3.0 Adding max value algorithm

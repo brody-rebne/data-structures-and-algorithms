@@ -300,6 +300,10 @@ https://github.com/brody-rebne/data-structures-and-algorithms/tree/master/code-c
 
 https://github.com/brody-rebne/data-structures-and-algorithms/tree/master/code-challenges/FizzBuzzTree/README.md
 
-## 16. Breadth-First Tree
+## 17. Breadth-First Tree
+
+https://github.com/brody-rebne/data-structures-and-algorithms/tree/master/code-challenges/Trees/README.md
+
+## 18. Binary Tree Max Value
 
 https://github.com/brody-rebne/data-structures-and-algorithms/tree/master/code-challenges/Trees/README.md

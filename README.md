@@ -299,3 +299,7 @@ https://github.com/brody-rebne/data-structures-and-algorithms/tree/master/code-c
 ## 16. FizzBuzz Tree
 
 https://github.com/brody-rebne/data-structures-and-algorithms/tree/master/code-challenges/FizzBuzzTree/README.md
+
+## 26. Insertion Sort
+
+https://github.com/brody-rebne/data-structures-and-algorithms/tree/master/code-challenges/InsertionSort/README.md

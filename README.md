@@ -307,3 +307,7 @@ https://github.com/brody-rebne/data-structures-and-algorithms/tree/master/code-c
 ## 18. Binary Tree Max Value
 
 https://github.com/brody-rebne/data-structures-and-algorithms/tree/master/code-challenges/Trees/README.md
+
+## 26. Insertion Sort
+
+https://github.com/brody-rebne/data-structures-and-algorithms/tree/master/code-challenges/InsertionSort/README.md

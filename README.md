@@ -310,4 +310,8 @@ https://github.com/brody-rebne/data-structures-and-algorithms/tree/master/code-c
 
 ## 26. Insertion Sort
 
-https://github.com/brody-rebne/data-structures-and-algorithms/tree/master/code-challenges/InsertionSort/README.md
+https://github.com/brody-rebne/data-structures-and-algorithms/tree/master/code-challenges/InsertionSort/BLOG.md
+
+## 27. Merge Sort
+
+https://github.com/brody-rebne/data-structures-and-algorithms/tree/master/code-challenges/MergeSort/BLOG.md

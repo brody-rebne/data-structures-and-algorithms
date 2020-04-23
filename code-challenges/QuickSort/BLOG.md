@@ -45,40 +45,24 @@ Let's run through what the pseudocode does with a step by step visualization. We
 
 #### 1st Pass
 
-![First Pass](https://i.imgur.com/ViBKF0Y.png)
+![First Pass](https://i.imgur.com/pSiU0em.png)
 
-The j value (number to check current value against), and the i value (current value, reassigned via a temp value container) begin at indeces 0 and 1 respectively. At this point, only the first value in the array can be considered sorted. The temp (4) is compared against the j (8), and, since it is smaller, moved left. Since this is the beginning of the array, no further checks are made.
+This visual demonstrates how the values are compared via multiple trackers, where and when they are swapped in places, and finally how the pivot index is re-determined. At the bottom you can see the two sub-sections which are re-sorted recursively. Let's take a look at how the second one is sorted.
 
 #### 2nd Pass
 
-![Second Pass](https://i.imgur.com/oUFKK5P.png)
+![Second Pass A](https://i.imgur.com/CMv9xGD.png)
 
-We can now say the first 2 values in the array are sorted. The j (8) value is now the last of the sorted values, and the i/temp (4) is the next. Since the temp value (23) is not smaller than the j (8) value, no change is made.
+![Second Pass B](https://i.imgur.com/zOWDPQZ.png)
 
-#### 3rd Pass
-
-The third pass resembles the 2nd exactly, but with both j (23) and i (42) moved 1 index to the right. In interest of paper space I skipped visualizing it.
-
-#### 4th Pass
-
-![Fourth Pass](https://i.imgur.com/kVT55hM.png)
-
-The fourth pass is our largest move yet. With the first 4 values now sorted, j (42) is last of those and i/temp (16) is the next. The temp (16) is smaller than j (42) at first check, and is moved left. It is smaller than the next j (23) as well, and is moved left once more. It finally comes to rest, as it is now larger than its j value (8).
-
-![Fifth Pass](https://i.imgur.com/EW8cqq4.png)
-
-The fifth pass resembles the fourth, but with one more move, more scribbles, and a worse cropping job. All but the final value are sorted, and our temp value must make a long journey. It begins less than its initial j (42), moves left and remains less than its new j (23). Moving left again, it finds itself less than its new j (16) one last time, and is moved left to the third position. Here it is finally larger than its j (8), and so remains in third.
-
-![Final Array](https://i.imgur.com/AkG1Wov.png)
-
-As sneak previewed in the screenshot for the fifth pass, our final array is sorted! After the fifth pass, the i index counter reaches the end of the array, and so the loop stops. The j index would remain valid, but since the loop is defined by the i index, and the j value inherits its index from i, the loop is closed.
+You can see how much sorting can get done in one pass with this sort here. At the end of the loop shown here this section would provide subsections of only 1 item, thus breaking the recursion loop and finishing the sort.
 
 ## Efficiency
 
 #### Time
 
-O(n^2), since there are 2 nested loops. While the realistic time for the algorithm is better than the worst possible sorting algorithm, its worst case scenario is still nearly as bad.
+Although it has a very good average performance, Quick Sort still has a worst case performance of O(n)
 
 #### Space
 
-O(1), since no additional objects need to be made.
+Due to recursion Quick Sort commands an O(log n) space complexity

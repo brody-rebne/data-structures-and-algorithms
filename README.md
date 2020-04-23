@@ -307,3 +307,7 @@ https://github.com/brody-rebne/data-structures-and-algorithms/tree/master/code-c
 ## 27. Merge Sort
 
 https://github.com/brody-rebne/data-structures-and-algorithms/tree/master/code-challenges/MergeSort/BLOG.md
+
+## 28. Quick Sort
+
+https://github.com/brody-rebne/data-structures-and-algorithms/tree/master/code-challenges/QuickSort/BLOG.md

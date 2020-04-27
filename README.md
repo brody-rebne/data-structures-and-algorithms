@@ -319,3 +319,7 @@ https://github.com/brody-rebne/data-structures-and-algorithms/tree/master/code-c
 ## 28. Quick Sort
 
 https://github.com/brody-rebne/data-structures-and-algorithms/tree/master/code-challenges/QuickSort/BLOG.md
+
+## 30. Hash Tables
+
+https://github.com/brody-rebne/data-structures-and-algorithms/tree/master/code-challenges/Hashtables/README.md

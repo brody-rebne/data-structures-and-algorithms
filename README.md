@@ -315,3 +315,11 @@ https://github.com/brody-rebne/data-structures-and-algorithms/tree/master/code-c
 ## 30. Hash Tables
 
 https://github.com/brody-rebne/data-structures-and-algorithms/tree/master/code-challenges/Hashtables/README.md
+
+## 32. Hash Tables
+
+https://github.com/brody-rebne/data-structures-and-algorithms/tree/master/code-challenges/RepeatedWord/README.md
+
+## 32. Hash Tables
+
+https://github.com/brody-rebne/data-structures-and-algorithms/tree/master/code-challenges/TreeIntersection/README.md
